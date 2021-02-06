@@ -1,0 +1,33 @@
+.conteudo {
+    border: 1px solid red;
+    /* Padding é o espaçamento interno do bloco. Pode receber 4 valores na ordem top, right, bottom e left. Se colocar apenas 2 valores, o primeiro vai mexer com top e botto, enquanto o segundo valor vai mexer com right e left.
+
+    Formas de se aplicar o padding:
+    padding-top: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+    padding: 20px 15px 10px 5px;
+    
+    Obs: Se o bloco tiver um width, o valor do padding será somado ao valor do width. */
+
+    padding: 20px;
+
+    /* Margin é o espaçamento externo, ou seja, com relação a outros blocos. Formas de aplicar o margin:
+    margin-top: 20px;
+    margin-right: 20px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    
+    Obs: Quando há dois blocos próximos com margem, o valor da margem será o do bloco de maior valor. Isso se chama "margin colapse". */
+
+    margin: 10px;
+
+    width: 150px;
+}
+
+.conteudo2 {
+    margin: 50px;
+    width: 150px;
+    border: 1px solid red;
+}
