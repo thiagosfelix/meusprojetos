@@ -1,0 +1,65 @@
+/*************************************
+Estilo Geral */
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #fff url("fundo.png") repeat-x;
+}
+
+.container {
+  width: 1080px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.border {
+  border: 1px solid red;
+}
+
+/************************************
+Header */
+header {
+  width: 100%;
+  flex-shrink: 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+/******************************
+Conteúdo */
+section {
+  width: 710px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.main-content {
+  width: 320px;
+}
+
+aside {
+  width: 350px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.side-content {
+  width: 350px;
+}
