@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 005</title>
+    <script>
+
+        var objetos = Array('Cadeira', 'Impressora', 'Garfo');
+
+        function addObjeto() {
+            var objeto = document.getElementById('caixa').value;
+
+            //verifica se o campo está preenchido
+            if (objeto === '') {
+                alert('Informe um valor válido');
+            }
+
+            else {
+                //verifica se o valor já foi inserido
+                //se sim, informa que já existe. Se não, insere o valor
+                if (objetos.indexOf(objeto) === -1) {
+                    objetos.push(objeto);
+                    console.log(objetos);
+                } else {
+                    alert('Objeto já foi adicionado');
+                }
+
+                document.getElementById('caixa').value = '';
+            }
+        }
+
+        function ordenar() {
+            objetos.sort();
+            console.log(objetos);
+        }
+
+    </script>
+</head>
+<body>
+    
+    <input id="caixa" type="text">
+
+    <button onclick="addObjeto()" type="button">Adicionar</button>
+    <button onclick="ordenar()" type="button">Ordenar</button>
+
+</body>
+</html>
