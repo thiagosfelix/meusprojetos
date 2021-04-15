@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos Formulários</title>
+    <script>
+
+        function acao1() {
+            alert('Evento disparado');
+        }
+
+        function acao2() {
+            alert('O mouse deixou a região do elemento');
+        }
+
+    </script>
+</head>
+<body>
+    <!-- 
+    onfocus - quando o elemento recebe o foco do cursor do mouse (quando clicamos nele)
+    onblur - quando o elemento perde o foco (quando clicamos em outro, por exemplo)
+    onchange - quando o estado do elemento é modificado
+-->
+
+<input onfocus="console.log('recebeu o foco')" onblur="console.log('perdeu o foco')" type="text" name="" id="">
+
+<select onchange="console.log('Estado foi modificado')" name="" id="">
+    <option value="">-- Selecione --</option>
+    <option value="1">Primeira opção</option>
+    <option value="1">Segunda opção</option>
+</select>
+</body>
+</html>

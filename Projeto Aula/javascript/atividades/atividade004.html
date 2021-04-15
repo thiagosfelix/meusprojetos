@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 004</title>
+    <script>
+
+        function fundoAmarelo() {
+            document.getElementById('caixa').style.backgroundColor = '#ffff00';
+        }
+
+        function modificaFundo() {
+            var valor = document.getElementById('caixa').value.length;
+            console.log(valor);
+
+            if (valor < 3) {
+                document.getElementById('caixa').style.backgroundColor = '#ff0000';
+            } else {
+                document.getElementById('caixa').style.backgroundColor = '#00ff00';
+            }
+        }
+
+
+    </script>
+</head>
+<body>
+    <input type="text" id="caixa" onfocus="fundoAmarelo()" onblur="modificaFundo()">
+</body>
+</html>

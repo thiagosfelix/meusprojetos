@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabalhando mais com datas</title>
+    <script>
+
+        /*var data = new Date();
+
+        //adicionar ou remover dias
+        document.write(data.toString() + '<br>');
+        data.setDate(data.getDate() + 365);
+        document.write(data.toString() + '<br>');
+
+        //adicionar ou remover meses
+        document.write(data.toString() + '<br>');
+        data.setMonth(data.getMonth() + 1);
+        document.write(data.toString() + '<br>');
+
+        //adicionar ou remover anos
+        document.write(data.toString() + '<br>');
+        data.setFullYear(data.getFullYear() + 1);
+        document.write(data.toString() + '<br>'); */
+
+
+        //15/01/2017
+        var data1 = new Date(2017, 0, 15);
+        //23/02/2017
+        var data2 = new Date(2017, 1, 23);
+
+        document.write(data1.toString() + '<br>');
+        document.write(data2.toString() + '<br>');
+
+        //converter datas para algo que possamos calcular
+        document.write(data1.getTime() + '<br>');
+        document.write(data2.getTime() + '<br>');
+        // a função getTime retorna quantos milisegundos têm entre a data utilizada e 1 de Janeiro de 1970
+
+        //encontrar a quantidade de milisigundos entre as duas datas
+        var milissegundos_entre_datas = Math.abs(data1.getTime() - data2.getTime());
+        document.write(milissegundos_entre_datas +  '<br>');
+
+        //1 dia tem 24h, cada h tem 60min, cada min tem 60s e cada s tem 1000ms
+        //então quantos ms existem em um dia?
+        var milissegundos_por_dia = (1*24*60*60*1000);
+        document.write('1 dia tem: ' + milissegundos_por_dia + 'ms' + '<br>');
+
+        document.write('A diferença entre data1 e data2 é de: ' + Math.ceil(milissegundos_entre_datas / milissegundos_por_dia) + ' dias.<br>');
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
