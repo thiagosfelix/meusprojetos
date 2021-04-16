@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrow Function</title>
+    <script>
+
+        /* let quadrado = function(x = 5) {
+            return x * x;
+        } */
+
+        /* //quando só há 1 parâmetro, não precisa usar ()
+        let quadrado = (x) => x * x;
+        //quando não se tem nenhuma complexidade dentro do bloco, não precisa usar {} e nem o 'return'
+
+        document.write(quadrado(3)); */
+
+
+        /* let parOuImpar = numero => {
+            if ((numero % 2) === 0) {
+                return 'Par';
+            } else {
+                return 'Ímpar';
+            }
+        } */
+
+        let parOuImpar = numero => numero % 2 === 0 ? 'Par' : 'Ímpar';
+
+        document.write(parOuImpar(155));
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
