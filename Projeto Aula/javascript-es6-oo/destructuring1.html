@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Destructuring - Parte 1</title>
+    <script>
+
+        //destructuring
+
+        let frutas = ['Abacaxi', 'Uva', 'Pera', 'Mamão'];
+
+        //let [a, b, , c] = frutas; //pular um índice
+        let [a, b = 'Abacate', c, d, e] = frutas;
+
+        //console.log(a, b, c, d, e = 'Banana');
+
+        let coisas = [['Abacaxi', 'Uva', 'Pera', 'Mamão'], ['José', 'Maria']];
+
+        let [,[, n2]] = coisas;
+        console.log(n2);
+
+        let [[,, f3]] = coisas;
+        console.log(f3);
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
